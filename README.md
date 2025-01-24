@@ -64,7 +64,7 @@ copier copy https://github.com/jppol-idp/apps-scaffold .
 ```
 
 This will prompt you for the name of your application and create the required
-files for the `dev`. `test` and `prod` environments.
+files for the chosen environments.
 
 Go through any TODOs in the `values.yaml` files and fill in the required values.
 You can simply search for `TODO` in the file to find them.
