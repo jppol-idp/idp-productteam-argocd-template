@@ -16,7 +16,7 @@ The directory structure is as follows:
 
 ```
 apps/
-  dev/
+  {team}-dev/
     app1/
       application.yaml
       values.yaml
@@ -24,7 +24,7 @@ apps/
       application.yaml
       values.yaml
     ...
-  test/
+  {team}-test/
     app1/
       application.yaml
       values.yaml
@@ -32,7 +32,7 @@ apps/
       application.yaml
       values.yaml
     ...
-  prod/
+  {team}-prod/
     app1/
       application.yaml
       values.yaml
