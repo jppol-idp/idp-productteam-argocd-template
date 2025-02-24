@@ -1,0 +1,16 @@
+# This file contains the directories we want to auto-update 
+# to the latest version of the docker images referenced
+#
+# Specify value files to track and a tag_start value 
+# to limit tags matched. Leave tagstart empty to use any tag. 
+# Trigger update from './scripts/update-images.yaml' or the 
+# included action. 
+# 
+# auto-update:
+#   - path: apps/cluster/servicename/values.yaml
+#     tag_start: test-
+#   - path: apps/cluster/service2/values.yaml
+#     tag_start: prod-
+#
+
+auto-update:
