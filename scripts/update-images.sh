@@ -6,7 +6,12 @@ AUTO_UPDATE_LIST=$(realpath "$SCRIPT_DIR/../auto-update.yaml")
 
 update_path() 
 {
+  if ! test -f $1; then 
+    echo "$file does not exist"
+    exit 0
+  fi
   file=$(realpath $1)
+
   image=$(yq .image.repository <$file)
   tag=$(yq .image.tag <$file)
   repo=${image#*/}
@@ -46,5 +51,4 @@ do
     echo "Awaiting $p"
     wait $p
 done
-rm -f $subpaths
 echo "all done"
